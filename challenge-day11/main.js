@@ -1,7 +1,7 @@
 
 
     // creating a new promise that resolves with a timeout
-        const data1  = false;
+        const data1  = true;
         promise1  = new Promise((res,rej)=>{
             if(data1){
               setTimeout(()=>{
