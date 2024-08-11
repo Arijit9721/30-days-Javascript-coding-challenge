@@ -9,24 +9,24 @@
     
     let placeTemp = {}
     const weatherIcon = {
-        "01d": "/public/icons/sun.png",	
-        "01n": "/public/icons/sun.png",	
-        "02d": "/public/icons/cloudy.png",	
-        "02n": "/public/icons/cloudy.png",	
-        "03d": "/public/icons/cloudy.png",	
-        "03n": "/public/icons/cloudy.png",	
-        "04d": "/public/icons/cloudy.png",
-        "04n": "/public/icons/cloudy.png",
-        "09d": "/public/icons/rain.png",
-        "09n": "/public/icons/rain.png",
-        "10d": "/public/icons/rain.png",
-        "10n": "/public/icons/rain.png",
-        "11d": "/public/icons/storm.png",
-        "11n": "/public/icons/storm.png",
-        "13d": "/public/icons/snow.png",
-        "13n": "/public/icons/snow.png",
-        "50d": "/public/icons/mist.png",
-        "50n": "/public/icons/mist.png"
+       "01d": "/icons/sun.png",	
+    "01n": "/icons/sun.png",	
+    "02d": "/icons/cloudy.png",	
+    "02n": "/icons/cloudy.png",	
+    "03d": "/icons/cloudy.png",	
+    "03n": "/icons/cloudy.png",	
+    "04d": "/icons/cloudy.png",
+    "04n": "/icons/cloudy.png",
+    "09d": "/icons/rain.png",
+    "09n": "/icons/rain.png",
+    "10d": "/icons/rain.png",
+    "10n": "/icons/rain.png",
+    "11d": "/icons/storm.png",
+    "11n": "/icons/storm.png",
+    "13d": "/icons/snow.png",
+    "13n": "/icons/snow.png",
+    "50d": "/icons/mist.png",
+    "50n": "/icons/mist.png"
         }
 
 // api call
@@ -89,7 +89,7 @@
     windDiv.className  = "windDiv";
     // displaying the wind icon 
     let windIcon = new Image();
-    windIcon.src = "/public/icons/wind.png";
+    windIcon.src = "/icons/wind.png";
     windIcon.alt = "wind Icon";
     windIcon.className = "windImage";
 
@@ -141,7 +141,7 @@
 
     // displaying the wind icon 
     let humidIcon = new Image();
-    humidIcon.src = "/public/icons/humidity.png";
+    humidIcon.src = "/icons/humidity.png";
     humidIcon.alt = "Humidity Icon";
     humidIcon.className = "humidImage";
 
