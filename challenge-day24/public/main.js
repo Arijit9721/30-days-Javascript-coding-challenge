@@ -5,27 +5,28 @@
     let inputVal = document.querySelector(".cityData");
     let citySearch = document.querySelector(".search");
     let getBody = document.body
-    let apiKey = "a713029e86c85fe9e5169aaf2c8a8e65";
+    let apiKey = import.meta.env.VITE_APIKEY;
+    
     let placeTemp = {}
     const weatherIcon = {
-        "01d": "/public/sun.png",	
-        "01n": "/public/sun.png",	
-        "02d": "/public/cloudy.png",	
-        "02n": "/public/cloudy.png",	
-        "03d": "/public/cloudy.png",	
-        "03n": "/public/cloudy.png",	
-        "04d": "/public/cloudy.png",
-        "04n": "/public/cloudy.png",
-        "09d": "/public/rain.png",
-        "09n": "/public/rain.png",
-        "10d": "/public/rain.png",
-        "10n": "/public/rain.png",
-        "11d": "/public/storm.png",
-        "11n": "/public/storm.png",
-        "13d": "/public/snow.png",
-        "13n": "/public/snow.png",
-        "50d": "/public/mist.png",
-        "50n": "/public/mist.png"
+        "01d": "/public/icons/sun.png",	
+        "01n": "/public/icons/sun.png",	
+        "02d": "/public/icons/cloudy.png",	
+        "02n": "/public/icons/cloudy.png",	
+        "03d": "/public/icons/cloudy.png",	
+        "03n": "/public/icons/cloudy.png",	
+        "04d": "/public/icons/cloudy.png",
+        "04n": "/public/icons/cloudy.png",
+        "09d": "/public/icons/rain.png",
+        "09n": "/public/icons/rain.png",
+        "10d": "/public/icons/rain.png",
+        "10n": "/public/icons/rain.png",
+        "11d": "/public/icons/storm.png",
+        "11n": "/public/icons/storm.png",
+        "13d": "/public/icons/snow.png",
+        "13n": "/public/icons/snow.png",
+        "50d": "/public/icons/mist.png",
+        "50n": "/public/icons/mist.png"
         }
 
 // api call
@@ -53,8 +54,10 @@
         let city = inputVal.value;
         await getWeather(city)
         inputVal.value = "";
+        if(placeTemp.location){
         changeHeading(placeTemp.location);
         displayData()
+        }
     })
 
 // change heading on search
@@ -86,7 +89,7 @@
     windDiv.className  = "windDiv";
     // displaying the wind icon 
     let windIcon = new Image();
-    windIcon.src = "/public/wind.png";
+    windIcon.src = "/public/icons/wind.png";
     windIcon.alt = "wind Icon";
     windIcon.className = "windImage";
 
@@ -138,7 +141,7 @@
 
     // displaying the wind icon 
     let humidIcon = new Image();
-    humidIcon.src = "/public/humidity.png";
+    humidIcon.src = "/public/icons/humidity.png";
     humidIcon.alt = "Humidity Icon";
     humidIcon.className = "humidImage";
 
