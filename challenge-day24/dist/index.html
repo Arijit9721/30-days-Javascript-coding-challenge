@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EasyWeather.com</title>
+    <link rel="shortcut icon" href="/assets/favicon-C-4AR3hE.png" type="image/x-icon">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r121/three.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.fog.min.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+  <script type="module" crossorigin src="/assets/index-CxRGDD4k.js"></script>
+  <link rel="stylesheet" crossorigin href="/assets/index-C-C8CYns.css">
+</head>
+<body>
+    <nav class="navbar">
+        <h2><a href="#"><span class="spanFirst">Easy</span><span class="spanSecond">Weather</span></a></h2>
+    </nav>
+
+  
+    <form class="search">
+      <div class="search-bar">
+        <input type="text" class="cityData" placeholder="Search..." required>
+        <button type="submit" class="search-button">
+        <svg xmlns="http://www.w3.org/2000/svg" width="40px" height="30px" viewBox="0 -960 
+        960 960" width="24px" fill="#1312128"><path d="M784-120 532-372q-30 24-69
+         38t-83 14q-109 0-184.5-75.5T120-580q0-109 75.5-184.5T380-840q109 0 184.5
+          75.5T640-580q0 44-14 83t-38 69l252 252-56 56ZM380-400q75 0 127.5-52.5T560
+          -580q0-75-52.5-127.5T380-760q-75 0-127.5 52.5T200-580q0 75 52.5 127.5T380
+          -400Z" class="submit"/></svg>
+        </button>
+      </div>
+    </form>
+
+    <div class="container">
+        <h1 class="city"> Find the weather of any place in the World</h1>
+    </div>
+
+   
+    <script>
+    const body = document.body;
+    VANTA.FOG({
+    el: "body",
+    mouseControls: true,
+    touchControls: true,
+    gyroControls: false,
+    minHeight: 200.00,
+    minWidth: 200.00,
+    highlightColor: 0xa49675,
+    midtoneColor: 0xcdbab7,
+    lowlightColor: 0x290fb6,
+    baseColor: 0xede5e5,
+    zoom: 0.65
+    })
+    </script>
+    
+    
+</body>
+</html>
