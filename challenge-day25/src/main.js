@@ -89,7 +89,7 @@
         <div class="movie-info">
           <div class="movie-heading">
           <h1 class="movie-title">${data.Title}</h1>
-          <h3 class="movie-rating"> <img src="/public/star.png" alt="star" class="rating-star"> ${data.Ratings[0].Value}</h3>
+          <h3 class="movie-rating"> <img src="/star.png" alt="star" class="rating-star"> ${data.Ratings[0].Value}</h3>
           </div>
           <div class="movie-basic-info">
               <p>${data.Rated}</p>
