@@ -62,7 +62,7 @@
  
    // function to get api data 
      const getData = async (inputVal)=>{
-       let url = `http://www.omdbapi.com/?t=${inputVal}&apikey=${apiKey}`
+       let url = `https://www.omdbapi.com/?t=${inputVal}&apikey=${apiKey}`
        try{
          let response = await fetch(url);
          let data = await response.json();
